@@ -4,3 +4,24 @@
 *.log
 *.csv
 libtorch/
+# build artifacts
+/build/
+CMakeFiles/
+CMakeCache.txt
+cmake-install.cmake
+Makefile
+
+# local datasets & caches
+/dataset/
+
+# libtorch binaries (don’t commit vendor libs)
+libtorch/
+
+# large binaries
+*.dylib
+*.so
+*.a
+
+# big models (track via LFS or Releases instead)
+*.pt
+*.bin
